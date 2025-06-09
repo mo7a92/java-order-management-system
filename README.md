@@ -1,21 +1,40 @@
-# Java Order Management System
+# 📦 Java Order Management System
 
-A console-based order processing app with support for inventory control and priority queues.
+A console-based Java application that manages inventory, handles customer orders, and supports both urgent and standard queues. Built with object-oriented programming principles and linked lists.
 
-## Features
-- Add/cancel/fulfill orders
-- Priority (urgent) and standard queues
-- Inventory stock management
-- Return cancelled orders to queue
-- Real-time status updates
+## 🧠 Key Features
+- Add, fulfill, and cancel customer orders  
+- Distinction between urgent (priority) and standard orders  
+- Real-time inventory stock validation  
+- Cancelled orders can return to their respective queues  
+- Tracks fulfilled and cancelled order history  
+- Clean CLI interface with status messages
 
-## Tech Stack
-- Java
-- Object-Oriented Programming
-- Linked Lists
+## 🧰 Technologies Used
+- Java (OOP)  
+- Linked Lists for queue handling  
+- File I/O for saving data
 
-## How to Run
-Compile with:
+## 📁 File Structure
+```
+OrderManagerApp.java       # Main application file  
+inventory.txt              # Inventory file (optional, if used)  
+orders.txt                 # Order save/load file (optional)  
+```
+
+## ▶️ How to Run
+Make sure your Java file is named `OrderManagerApp.java` and contains:
+```java
+public class OrderManagerApp {
+    public static void main(String[] args) {
+        ...
+    }
+}
+```
+
+Then compile and run:
 ```bash
-javac ProjectTT.java
-java ProjectTT
+javac OrderManagerApp.java
+java OrderManagerApp
+```
+
